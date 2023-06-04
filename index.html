@@ -57,14 +57,21 @@
         </div>
 
 
-        <script src="script.js"></script>
 
 
         <footer class="footer">
-            created by sumit bagate copyright &copy; 2023
+            created by sumit bagate copyright &copy; <span id="year"></span>
 
 
         </footer>
+
+
+
+        <script src="script.js"></script>
+
+        <script>
+            const year = document.getElementById('year').innerHTML = new Date().getFullYear();
+        </script>
 </body>
 
 </html>
